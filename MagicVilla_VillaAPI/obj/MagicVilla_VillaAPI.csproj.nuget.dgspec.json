@@ -1,25 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Docs\\Documentos - Disco D\\proyectosCsharp\\MagicVilla\\MagicVilla_VillaAPI\\MagicVilla_VillaAPI.csproj": {}
+    "D:\\Sistemas\\MagicVilla\\MagicVilla_VillaAPI\\MagicVilla_VillaAPI.csproj": {}
   },
   "projects": {
-    "D:\\Docs\\Documentos - Disco D\\proyectosCsharp\\MagicVilla\\MagicVilla_VillaAPI\\MagicVilla_VillaAPI.csproj": {
+    "D:\\Sistemas\\MagicVilla\\MagicVilla_VillaAPI\\MagicVilla_VillaAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Docs\\Documentos - Disco D\\proyectosCsharp\\MagicVilla\\MagicVilla_VillaAPI\\MagicVilla_VillaAPI.csproj",
+        "projectUniqueName": "D:\\Sistemas\\MagicVilla\\MagicVilla_VillaAPI\\MagicVilla_VillaAPI.csproj",
         "projectName": "MagicVilla_VillaAPI",
-        "projectPath": "D:\\Docs\\Documentos - Disco D\\proyectosCsharp\\MagicVilla\\MagicVilla_VillaAPI\\MagicVilla_VillaAPI.csproj",
+        "projectPath": "D:\\Sistemas\\MagicVilla\\MagicVilla_VillaAPI\\MagicVilla_VillaAPI.csproj",
         "packagesPath": "C:\\Users\\anx-f\\.nuget\\packages\\",
-        "outputPath": "D:\\Docs\\Documentos - Disco D\\proyectosCsharp\\MagicVilla\\MagicVilla_VillaAPI\\obj\\",
+        "outputPath": "D:\\Sistemas\\MagicVilla\\MagicVilla_VillaAPI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\ProgramasEnD\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\anx-f\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,16 +39,6 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[7.0.5, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.4.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -65,15 +50,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
