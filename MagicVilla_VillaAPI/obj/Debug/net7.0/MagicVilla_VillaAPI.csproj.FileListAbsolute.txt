@@ -31,18 +31,6 @@ D:\Docs\Documentos - Disco D\proyectosCsharp\MagicVilla\MagicVilla_VillaAPI\obj\
 D:\Docs\Documentos - Disco D\proyectosCsharp\MagicVilla\MagicVilla_VillaAPI\obj\Debug\net7.0\MagicVilla_VillaAPI.pdb
 D:\Docs\Documentos - Disco D\proyectosCsharp\MagicVilla\MagicVilla_VillaAPI\obj\Debug\net7.0\MagicVilla_VillaAPI.genruntimeconfig.cache
 D:\Docs\Documentos - Disco D\proyectosCsharp\MagicVilla\MagicVilla_VillaAPI\obj\Debug\net7.0\ref\MagicVilla_VillaAPI.dll
-D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\appsettings.Development.json
-D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\appsettings.json
-D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\MagicVilla_VillaAPI.exe
-D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\MagicVilla_VillaAPI.deps.json
-D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\MagicVilla_VillaAPI.runtimeconfig.json
-D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\MagicVilla_VillaAPI.dll
-D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\MagicVilla_VillaAPI.pdb
-D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
-D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Microsoft.OpenApi.dll
-D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
-D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\obj\Debug\net7.0\MagicVilla_VillaAPI.csproj.AssemblyReference.cache
 D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\obj\Debug\net7.0\MagicVilla_VillaAPI.GeneratedMSBuildEditorConfig.editorconfig
 D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\obj\Debug\net7.0\MagicVilla_VillaAPI.AssemblyInfoInputs.cache
@@ -50,6 +38,32 @@ D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\obj\Debug\net7.0\MagicVilla_VillaAPI.
 D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\obj\Debug\net7.0\MagicVilla_VillaAPI.csproj.CoreCompileInputs.cache
 D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\obj\Debug\net7.0\MagicVilla_VillaAPI.MvcApplicationPartsAssemblyInfo.cs
 D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\obj\Debug\net7.0\MagicVilla_VillaAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\appsettings.Development.json
+D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\appsettings.json
+D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\MagicVilla_VillaAPI.exe
+D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\MagicVilla_VillaAPI.deps.json
+D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\MagicVilla_VillaAPI.runtimeconfig.json
+D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\MagicVilla_VillaAPI.dll
+D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\MagicVilla_VillaAPI.pdb
+D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Microsoft.OpenApi.dll
+D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Serilog.dll
+D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Serilog.AspNetCore.dll
+D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
+D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
+D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
+D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Serilog.Sinks.File.dll
+D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\obj\Debug\net7.0\staticwebassets\msbuild.MagicVilla_VillaAPI.Microsoft.AspNetCore.StaticWebAssets.props
 D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\obj\Debug\net7.0\staticwebassets\msbuild.build.MagicVilla_VillaAPI.props
 D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.MagicVilla_VillaAPI.props
