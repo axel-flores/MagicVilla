@@ -17,7 +17,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<MagicVillaDbContext>(option => {
     //option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultSqlConnection"));
-    option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultSqlConnection"));
+    option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultSQLConnection"));
     });
 
 //para obtener una peticion http aceptable
