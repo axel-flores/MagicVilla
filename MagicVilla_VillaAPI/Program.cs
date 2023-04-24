@@ -1,6 +1,8 @@
 
 
+using MagicVilla_VillaAPI.Data;
 using MagicVilla_VillaAPI.Logging;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +14,11 @@ var builder = WebApplication.CreateBuilder(args);
 //Log.Logger = new LoggerConfiguration().MinimumLevel.Debug()
 //    .WriteTo.File("log/villalogs.txt", rollingInterval:RollingInterval.Day).CreateLogger() ;
 //builder.Host.UseSerilog();
+
+builder.Services.AddDbContext<MagicVillaDbContext>(option => {
+    //option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultSqlConnection"));
+    option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultSqlConnection"));
+    });
 
 //para obtener una peticion http aceptable
 builder.Services.AddControllers(
