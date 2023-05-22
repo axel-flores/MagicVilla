@@ -24,6 +24,7 @@ builder.Services.AddDbContext<MagicVillaDbContext>(option => {
     });
 
 builder.Services.AddScoped<IVillaRepository, VillaRepository>();
+builder.Services.AddScoped<IVillaNumberRepository, VillaNumberRepository>();
 builder.Services.AddAutoMapper(typeof(MappingConfig));
 
 //para obtener una peticion http aceptable
