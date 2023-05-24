@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AXEL\\Source\\Repos\\MagicVilla\\MagicVilla_VillaAPI\\MagicVilla_VillaAPI.csproj": {}
+    "D:\\Sistemas\\MagicVilla\\MagicVilla_VillaAPI\\MagicVilla_VillaAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AXEL\\Source\\Repos\\MagicVilla\\MagicVilla_VillaAPI\\MagicVilla_VillaAPI.csproj": {
+    "D:\\Sistemas\\MagicVilla\\MagicVilla_VillaAPI\\MagicVilla_VillaAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AXEL\\Source\\Repos\\MagicVilla\\MagicVilla_VillaAPI\\MagicVilla_VillaAPI.csproj",
+        "projectUniqueName": "D:\\Sistemas\\MagicVilla\\MagicVilla_VillaAPI\\MagicVilla_VillaAPI.csproj",
         "projectName": "MagicVilla_VillaAPI",
-        "projectPath": "C:\\Users\\AXEL\\Source\\Repos\\MagicVilla\\MagicVilla_VillaAPI\\MagicVilla_VillaAPI.csproj",
-        "packagesPath": "C:\\Users\\AXEL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AXEL\\Source\\Repos\\MagicVilla\\MagicVilla_VillaAPI\\obj\\",
+        "projectPath": "D:\\Sistemas\\MagicVilla\\MagicVilla_VillaAPI\\MagicVilla_VillaAPI.csproj",
+        "packagesPath": "C:\\Users\\anx-f\\.nuget\\packages\\",
+        "outputPath": "D:\\Sistemas\\MagicVilla\\MagicVilla_VillaAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\AXEL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\anx-f\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
