@@ -30,5 +30,28 @@ namespace MagicVilla_Web.Controllers
 
             return View(list);
         }
+
+        public async Task<IActionResult> CreateVilla()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateVilla(VillaCreateDTO model)
+        {
+            //Verificamos si el modelo DTO es valido
+            if(ModelState.IsValid)
+            {
+                //obtenemos la respuesta de la API
+                var response = await _villaService.CreateAsync<APIResponse>(model);
+                if(response != null && response.IsSuccess)
+                {
+                    return RedirectToAction(nameof(IndexVilla));
+                }
+            }
+
+            return View(model);
+        }
     }
 }
