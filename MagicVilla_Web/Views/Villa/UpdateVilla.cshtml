@@ -1,0 +1,60 @@
+﻿@model MagicVilla_Web.Models.Dto.VillaUpdateDTO
+
+<div class="card p-2 mt-2">
+    <div class="card-header">
+        <h1 class="text-primary">Update Villa</h1>
+    </div>
+    <div class="card-body">
+        <form class="row g-3" asp-action="UpdateVilla">
+            <input hidden asp-for="Id" />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="col-md-6">
+                <label asp-for="Name" class="form-label">Nombre</label>
+                <input asp-for="Name" type="text" class="form-control">
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="col-md-6">
+                <label asp-for="Rate" class="form-label">Rate</label>
+                <input asp-for="Rate" class="form-control" />
+                <span asp-validation-for="Rate" class="text-danger"></span>
+            </div>
+            <div class="col-12">
+                <label asp-for="Details" class="form-label">Address</label>
+                <textarea asp-for="Details" class="form-control" rows="4"></textarea>
+                <span asp-validation-for="Details" class="text-danger"></span>
+            </div>
+            <div class="col-md-6">
+                <label asp-for="Sqft" class="form-label"></label>
+                <input asp-for="Sqft" class="form-control" />
+                <span asp-validation-for="Sqft" class="text-danger"></span>
+            </div>
+            <div class="col-md-6">
+                <label asp-for="Occupancy" class="form-label"></label>
+                <input asp-for="Occupancy" class="form-control">
+                <span asp-validation-for="Occupancy" class="text-danger"></span>
+            </div>
+            <div class="col-12">
+                <label asp-for="ImageUrl" class="form-label"></label>
+                <input asp-for="ImageUrl" class="form-control" />
+                <span asp-validation-for="ImageUrl" class="text-danger"></span>
+            </div>
+            <div class="col-12">
+                <label asp-for="Amenity" class="form-label"></label>
+                <textarea asp-for="Amenity" class="form-control" rows="2"></textarea>
+                <span asp-validation-for="Amenity" class="text-danger"></span>
+            </div>
+
+            <div class="col-12 d-flex justify-content-between">
+                <a asp-action="IndexVilla" class="btn btn-primary">Back to list</a>
+                <button class="btn btn-success" type="submit" value="Update">Update</button>
+            </div>
+        </form>
+    </div>
+
+
+</div>
+
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
