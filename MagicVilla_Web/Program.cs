@@ -10,8 +10,10 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddAutoMapper(typeof(MappingConfig));
 
 builder.Services.AddHttpClient<IVillaService, VillaService>();
+builder.Services.AddHttpClient<IVillaNumberService, VillaNumberService>();
 //por cada peticion tendra un objeto villaService aun si se hace request cientos de  veces
 builder.Services.AddScoped<IVillaService, VillaService>();
+builder.Services.AddScoped<IVillaNumberService, VillaNumberService>();
 
 var app = builder.Build();
 

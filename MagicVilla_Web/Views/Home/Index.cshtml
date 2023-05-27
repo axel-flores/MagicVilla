@@ -1,8 +1,33 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@using Microsoft.AspNetCore.Components;
+@model IEnumerable<MagicVilla_Web.Models.Dto.VillaDTO>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<img class="d-block w-100" src="images/home/slide1.jpg"/>
+
+    <div class="row row-cols-1 row-cols-md-4 g-4 m-2">
+        @foreach (var villa in Model)
+        {
+            <div class="col">
+                <div class="card">
+                    <img src="@villa.ImageUrl" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">@villa.Name</h5>
+                        <p class="card-text">@((MarkupString)villa.Details)</p>
+                        <div class="row">
+                            <div class="col">
+                                <label class="card-text"><small>MaxOccupancy: @villa.Occupancy</small></label>
+                                <label class="card-text"><small>Villa Size: @villa.Sqft sqft</small></label>
+                            </div>
+                            <div class="col text-warning text-end font-weight-bold" style="font-size:20px">
+                                USD
+                                <label class="card-text" style="border-bottom:1px solid #ff6a00">@villa.Rate.ToString("c")</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="" class="btn btn-success form-control btn-block">Book</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
