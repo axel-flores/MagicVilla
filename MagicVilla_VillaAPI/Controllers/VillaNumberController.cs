@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Azure;
 using MagicVilla_VillaAPI.Models;
 using MagicVilla_VillaAPI.Models.Dto;
 using MagicVilla_VillaAPI.Repository.IRepository;
@@ -63,17 +64,17 @@ namespace MagicVilla_VillaAPI.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult<APIResponse>> PostVillaNumber([FromBody] VillaNumberDTO createDTO)
+        public async Task<ActionResult<APIResponse>> PostVillaNumber([FromBody] VillaNumberCreateDTO createDTO)
         {
             if(await _dbVillaNumber.GetAsync(v => v.VillaNum == createDTO.VillaNum) != null)
             {
-                ModelState.AddModelError("AlreadyExist","Numero de villa existente");
+                ModelState.AddModelError("ErrorMessages", "Numero de villa existente");
                 return BadRequest(ModelState);
             }
 
             if (await _dbVilla.GetAsync(r => r.Id == createDTO.VillaID) == null)
             {
-                ModelState.AddModelError("Invalido", "Id de villa invalido");
+                ModelState.AddModelError("ErrorMessages", "Id de villa invalido");
                 return BadRequest(ModelState);
             }
 
@@ -89,7 +90,7 @@ namespace MagicVilla_VillaAPI.Controllers
             _apiResponse.Result = _mapper.Map<VillaNumberDTO>(villaNumber);
             _apiResponse.StatusCode=HttpStatusCode.Created;
 
-            return CreatedAtRoute("GetVillaNumber", new { number = villaNumber.VillaNum}, _apiResponse);
+            return CreatedAtRoute("GetVilla", new { id = villaNumber.VillaNum }, _apiResponse);
         }
 
         [HttpDelete("{id:int}", Name ="DeleteVillaNumber")]
@@ -118,7 +119,7 @@ namespace MagicVilla_VillaAPI.Controllers
         [HttpPut("{id:int}", Name = "UpdateVillaNumber")]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<ActionResult<APIResponse>> UpdateVillaNumber(int number, [FromBody] VillaNumberDTO updateDTO)
+        public async Task<ActionResult<APIResponse>> UpdateVillaNumber(int number, [FromBody] VillaNumberUpdateDTO updateDTO)
         {
             if(updateDTO == null || number != updateDTO.VillaNum)
             {
@@ -127,7 +128,7 @@ namespace MagicVilla_VillaAPI.Controllers
 
             if (await _dbVilla.GetAsync(r => r.Id == updateDTO.VillaID) == null)
             {
-                ModelState.AddModelError("Invalido", "Id de villa invalido");
+                ModelState.AddModelError("ErrorMessages", "Id de villa invalido");
                 return BadRequest(ModelState);
             }
 
