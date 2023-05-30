@@ -1,0 +1,41 @@
+﻿@model MagicVilla_Web.Models.VM.VillaNumberDeleteVM
+
+
+<div class="card p-2 mt-2">
+    <div class="card-header">
+        <h1 class="text-primary">Delete Villa Number</h1>
+    </div>
+    <div class="card-body">
+        <form class="row g-3" asp-action="DeleteVillaNumber">
+            <input hidden asp-for="VillaNumber.VillaNum"/>
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="col-md-6">
+                <label asp-for="VillaNumber.VillaNum" class="form-label">Villa Number</label>
+                <input asp-for="VillaNumber.VillaNum" disabled type="number" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <label asp-for="VillaNumber.VillaID" class="form-label">Villa id</label>
+                <select asp-for="VillaNumber.VillaID" disabled class="form-select" asp-items="@Model.VillaList">
+                    <option disabled selected>- - Select Villa - -</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <label asp-for="VillaNumber.SpecialDetails" class="form-label">Special details</label>
+                <textarea asp-for="VillaNumber.SpecialDetails" disabled class="form-control" rows="2"></textarea>
+            </div>
+
+            <div class="col-12 d-flex justify-content-between">
+                <a asp-action="IndexVillaNumber" class="btn btn-primary">Back to list</a>
+                <button class="btn btn-success" type="submit" value="Delete">Delete</button>
+            </div>
+        </form>
+    </div>
+
+
+</div>
+
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
+

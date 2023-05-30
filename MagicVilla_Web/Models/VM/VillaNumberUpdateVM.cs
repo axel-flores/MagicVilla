@@ -12,7 +12,7 @@ namespace MagicVilla_Web.Models.VM
 
         public VillaNumberUpdateVM()
         {
-            VillaNumber = new ();
+            VillaNumber = new VillaNumberUpdateDTO();
         }
     }
 }
