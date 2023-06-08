@@ -125,8 +125,11 @@ D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\AutoMapper.Extension
 D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Azure.Core.dll
 D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Azure.Identity.dll
 D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Humanizer.dll
+D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
 D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll
 D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
 D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
@@ -197,4 +200,3 @@ D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\obj\Debug\net7.0\refint\MagicVilla_Vi
 D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\obj\Debug\net7.0\MagicVilla_VillaAPI.pdb
 D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\obj\Debug\net7.0\MagicVilla_VillaAPI.genruntimeconfig.cache
 D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\obj\Debug\net7.0\ref\MagicVilla_VillaAPI.dll
-D:\Sistemas\MagicVilla\MagicVilla_VillaAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

@@ -1,0 +1,25 @@
+﻿@model MagicVilla_Web.Models.Dto.LoginRequestDTO
+
+<div class="card card-body">
+    <h1 class="card-title">Login</h1>
+    <form class="row g-3" method="post">
+        <div class="col-12">
+            <label for="inputUsername" class="form-label">Username</label>
+            <input type="text" class="form-control" id="inputUsername">
+        </div>
+        <div class="col-12">
+            <label for="inputPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword">
+        </div>
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="col-12">
+            <button type="submit" value="Submit" class="btn btn-success">Login <i class="bi bi-box-arrow-in-right"></i></button>
+        </div>
+    </form>
+
+
+</div>
+
+@{
+    <partial name="_ValidationScriptsPartial"></partial>
+}

@@ -3,15 +3,19 @@ using Azure;
 using MagicVilla_VillaAPI.Models;
 using MagicVilla_VillaAPI.Models.Dto;
 using MagicVilla_VillaAPI.Repository.IRepository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using System.Data;
 using System.Net;
 using System.Runtime.CompilerServices;
 
-namespace MagicVilla_VillaAPI.Controllers
+namespace MagicVilla_VillaAPI.Controllers.v1
 {
-    [Route("api/VillaNumberAPI")]
+    [Route("api/v{version:apiVersion}/VillaNumberAPI")]
     [ApiController]
+    //[ApiVersion("1.0", Deprecated = true)]
+    [ApiVersion("1.0")]
     public class VillaNumberController : Controller
     {
         private readonly IMapper _mapper;
@@ -24,11 +28,11 @@ namespace MagicVilla_VillaAPI.Controllers
             _dbVillaNumber = villaNumberRepository;
             _dbVilla = dbVilla;
             _mapper = mapper;
-            this._apiResponse = new APIResponse();
+            _apiResponse = new APIResponse();
             _dbVilla = dbVilla;
         }
 
-        [HttpGet()]
+        [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<APIResponse>> GetVillaNumbers()
         {
@@ -37,6 +41,13 @@ namespace MagicVilla_VillaAPI.Controllers
             _apiResponse.StatusCode = HttpStatusCode.OK;
             return Ok(_apiResponse);
         }
+
+        //[MapToApiVersion("2.0")]
+        //[HttpGet]
+        //public IEnumerable<string> Get()
+        //{
+        //    return new string[] { "valor1", "valor2" };
+        //}
 
         [HttpGet("{id:int}", Name = "GetVillaNumber")]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -57,9 +68,10 @@ namespace MagicVilla_VillaAPI.Controllers
             _apiResponse.Result = _mapper.Map<VillaNumberDTO>(villaNumber);
             _apiResponse.StatusCode = HttpStatusCode.OK;
 
-            return (_apiResponse);
+            return _apiResponse;
         }
 
+        [Authorize(Roles = "admin")]
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -93,6 +105,7 @@ namespace MagicVilla_VillaAPI.Controllers
             return CreatedAtRoute("GetVilla", new { id = villaNumber.VillaNum }, _apiResponse);
         }
 
+        [Authorize(Roles = "admin")]
         [HttpDelete("{id:int}", Name = "DeleteVillaNumber")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -116,6 +129,7 @@ namespace MagicVilla_VillaAPI.Controllers
             return Ok(_apiResponse);
         }
 
+        [Authorize(Roles = "admin")]
         [HttpPut("{id:int}", Name = "UpdateVillaNumber")]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status200OK)]
